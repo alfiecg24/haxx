@@ -11,7 +11,7 @@ import SwiftUI
 struct haxxApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ExploitView()
         }
     }
 }

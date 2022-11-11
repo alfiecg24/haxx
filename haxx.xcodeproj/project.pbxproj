@@ -8,17 +8,59 @@
 
 /* Begin PBXBuildFile section */
 		31B41BB0291EB77800F0F218 /* haxxApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B41BAF291EB77800F0F218 /* haxxApp.swift */; };
-		31B41BB2291EB77800F0F218 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B41BB1291EB77800F0F218 /* ContentView.swift */; };
+		31B41BB2291EB77800F0F218 /* ExploitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 31B41BB1291EB77800F0F218 /* ExploitView.swift */; };
 		31B41BB4291EB77900F0F218 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B41BB3291EB77900F0F218 /* Assets.xcassets */; };
 		31B41BB7291EB77900F0F218 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 31B41BB6291EB77900F0F218 /* Preview Assets.xcassets */; };
+		31B41BBE291EB7A300F0F218 /* mymodel.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 31B41BBD291EB7A300F0F218 /* mymodel.mlmodel */; };
+		31B41BE3291EB7C000F0F218 /* model_tmp.hwx in Resources */ = {isa = PBXBuildFile; fileRef = 31B41BC0291EB7C000F0F218 /* model_tmp.hwx */; };
+		31B41BE4291EB7C000F0F218 /* IOGPU.c in Sources */ = {isa = PBXBuildFile; fileRef = 31B41BC1291EB7C000F0F218 /* IOGPU.c */; };
+		31B41BE5291EB7C000F0F218 /* ANEDirectIn.c in Sources */ = {isa = PBXBuildFile; fileRef = 31B41BC3291EB7C000F0F218 /* ANEDirectIn.c */; };
+		31B41BE7291EB7C000F0F218 /* utils.c in Sources */ = {isa = PBXBuildFile; fileRef = 31B41BDD291EB7C000F0F218 /* utils.c */; };
+		31B41BE8291EB7C000F0F218 /* IOSurface.c in Sources */ = {isa = PBXBuildFile; fileRef = 31B41BE0291EB7C000F0F218 /* IOSurface.c */; };
+		31B41BE9291EB7C000F0F218 /* exploit.m in Sources */ = {isa = PBXBuildFile; fileRef = 31B41BE2291EB7C000F0F218 /* exploit.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		31B41BAC291EB77800F0F218 /* haxx.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = haxx.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		31B41BAF291EB77800F0F218 /* haxxApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = haxxApp.swift; sourceTree = "<group>"; };
-		31B41BB1291EB77800F0F218 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		31B41BB1291EB77800F0F218 /* ExploitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploitView.swift; sourceTree = "<group>"; };
 		31B41BB3291EB77900F0F218 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		31B41BB6291EB77900F0F218 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		31B41BBD291EB7A300F0F218 /* mymodel.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = mymodel.mlmodel; sourceTree = "<group>"; };
+		31B41BC0291EB7C000F0F218 /* model_tmp.hwx */ = {isa = PBXFileReference; lastKnownFileType = file; path = model_tmp.hwx; sourceTree = "<group>"; };
+		31B41BC1291EB7C000F0F218 /* IOGPU.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IOGPU.c; sourceTree = "<group>"; };
+		31B41BC2291EB7C000F0F218 /* exploit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = exploit.h; sourceTree = "<group>"; };
+		31B41BC3291EB7C000F0F218 /* ANEDirectIn.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ANEDirectIn.c; sourceTree = "<group>"; };
+		31B41BC5291EB7C000F0F218 /* _ANEIOSurfaceObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEIOSurfaceObject.h; sourceTree = "<group>"; };
+		31B41BC6291EB7C000F0F218 /* _ANEDaemonConnection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEDaemonConnection.h; sourceTree = "<group>"; };
+		31B41BC7291EB7C000F0F218 /* _ANEDeviceInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEDeviceInfo.h; sourceTree = "<group>"; };
+		31B41BC8291EB7C000F0F218 /* _ANEProgramForEvaluation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEProgramForEvaluation.h; sourceTree = "<group>"; };
+		31B41BC9291EB7C000F0F218 /* AppleNeuralEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppleNeuralEngine.h; sourceTree = "<group>"; };
+		31B41BCA291EB7C000F0F218 /* _ANEDataReporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEDataReporter.h; sourceTree = "<group>"; };
+		31B41BCB291EB7C000F0F218 /* _ANEQoSMapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEQoSMapper.h; sourceTree = "<group>"; };
+		31B41BCC291EB7C000F0F218 /* _ANELog.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANELog.h; sourceTree = "<group>"; };
+		31B41BCD291EB7C000F0F218 /* _ANEPerformanceStats.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEPerformanceStats.h; sourceTree = "<group>"; };
+		31B41BCE291EB7C000F0F218 /* _ANEDeviceController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEDeviceController.h; sourceTree = "<group>"; };
+		31B41BCF291EB7C000F0F218 /* NSSecureCoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSSecureCoding.h; sourceTree = "<group>"; };
+		31B41BD0291EB7C000F0F218 /* _ANEDaemonProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEDaemonProtocol.h; sourceTree = "<group>"; };
+		31B41BD1291EB7C000F0F218 /* _ANEStrings.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEStrings.h; sourceTree = "<group>"; };
+		31B41BD2291EB7C000F0F218 /* _ANEClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEClient.h; sourceTree = "<group>"; };
+		31B41BD3291EB7C000F0F218 /* _ANERequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANERequest.h; sourceTree = "<group>"; };
+		31B41BD4291EB7C000F0F218 /* _ANECloneHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANECloneHelper.h; sourceTree = "<group>"; };
+		31B41BD5291EB7C000F0F218 /* _ANEErrors.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEErrors.h; sourceTree = "<group>"; };
+		31B41BD6291EB7C000F0F218 /* _ANEModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEModel.h; sourceTree = "<group>"; };
+		31B41BD7291EB7C000F0F218 /* _ANEHashEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = _ANEHashEncoding.h; sourceTree = "<group>"; };
+		31B41BD8291EB7C000F0F218 /* NSCopying.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NSCopying.h; sourceTree = "<group>"; };
+		31B41BD9291EB7C000F0F218 /* AppleNeuralEngine-Structs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "AppleNeuralEngine-Structs.h"; sourceTree = "<group>"; };
+		31B41BDA291EB7C000F0F218 /* IOSurface.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOSurface.h; sourceTree = "<group>"; };
+		31B41BDB291EB7C000F0F218 /* aneProgram.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aneProgram.h; sourceTree = "<group>"; };
+		31B41BDD291EB7C000F0F218 /* utils.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = utils.c; sourceTree = "<group>"; };
+		31B41BDE291EB7C000F0F218 /* iokit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iokit.h; sourceTree = "<group>"; };
+		31B41BDF291EB7C000F0F218 /* IOGPU.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IOGPU.h; sourceTree = "<group>"; };
+		31B41BE0291EB7C000F0F218 /* IOSurface.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = IOSurface.c; sourceTree = "<group>"; };
+		31B41BE1291EB7C000F0F218 /* ANEDirectIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ANEDirectIn.h; sourceTree = "<group>"; };
+		31B41BE2291EB7C000F0F218 /* exploit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = exploit.m; sourceTree = "<group>"; };
+		31BE50E7291ECC3F00D7E3E2 /* haxx-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "haxx-Bridging-Header.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,10 +93,13 @@
 		31B41BAE291EB77800F0F218 /* haxx */ = {
 			isa = PBXGroup;
 			children = (
+				31B41BBF291EB7C000F0F218 /* exploit */,
+				31B41BBD291EB7A300F0F218 /* mymodel.mlmodel */,
 				31B41BAF291EB77800F0F218 /* haxxApp.swift */,
-				31B41BB1291EB77800F0F218 /* ContentView.swift */,
+				31B41BB1291EB77800F0F218 /* ExploitView.swift */,
 				31B41BB3291EB77900F0F218 /* Assets.xcassets */,
 				31B41BB5291EB77900F0F218 /* Preview Content */,
+				31BE50E7291ECC3F00D7E3E2 /* haxx-Bridging-Header.h */,
 			);
 			path = haxx;
 			sourceTree = "<group>";
@@ -65,6 +110,54 @@
 				31B41BB6291EB77900F0F218 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		31B41BBF291EB7C000F0F218 /* exploit */ = {
+			isa = PBXGroup;
+			children = (
+				31B41BC0291EB7C000F0F218 /* model_tmp.hwx */,
+				31B41BC1291EB7C000F0F218 /* IOGPU.c */,
+				31B41BC2291EB7C000F0F218 /* exploit.h */,
+				31B41BC3291EB7C000F0F218 /* ANEDirectIn.c */,
+				31B41BC4291EB7C000F0F218 /* AppleNeuralEngine */,
+				31B41BDA291EB7C000F0F218 /* IOSurface.h */,
+				31B41BDB291EB7C000F0F218 /* aneProgram.h */,
+				31B41BDD291EB7C000F0F218 /* utils.c */,
+				31B41BDE291EB7C000F0F218 /* iokit.h */,
+				31B41BDF291EB7C000F0F218 /* IOGPU.h */,
+				31B41BE0291EB7C000F0F218 /* IOSurface.c */,
+				31B41BE1291EB7C000F0F218 /* ANEDirectIn.h */,
+				31B41BE2291EB7C000F0F218 /* exploit.m */,
+			);
+			path = exploit;
+			sourceTree = "<group>";
+		};
+		31B41BC4291EB7C000F0F218 /* AppleNeuralEngine */ = {
+			isa = PBXGroup;
+			children = (
+				31B41BC5291EB7C000F0F218 /* _ANEIOSurfaceObject.h */,
+				31B41BC6291EB7C000F0F218 /* _ANEDaemonConnection.h */,
+				31B41BC7291EB7C000F0F218 /* _ANEDeviceInfo.h */,
+				31B41BC8291EB7C000F0F218 /* _ANEProgramForEvaluation.h */,
+				31B41BC9291EB7C000F0F218 /* AppleNeuralEngine.h */,
+				31B41BCA291EB7C000F0F218 /* _ANEDataReporter.h */,
+				31B41BCB291EB7C000F0F218 /* _ANEQoSMapper.h */,
+				31B41BCC291EB7C000F0F218 /* _ANELog.h */,
+				31B41BCD291EB7C000F0F218 /* _ANEPerformanceStats.h */,
+				31B41BCE291EB7C000F0F218 /* _ANEDeviceController.h */,
+				31B41BCF291EB7C000F0F218 /* NSSecureCoding.h */,
+				31B41BD0291EB7C000F0F218 /* _ANEDaemonProtocol.h */,
+				31B41BD1291EB7C000F0F218 /* _ANEStrings.h */,
+				31B41BD2291EB7C000F0F218 /* _ANEClient.h */,
+				31B41BD3291EB7C000F0F218 /* _ANERequest.h */,
+				31B41BD4291EB7C000F0F218 /* _ANECloneHelper.h */,
+				31B41BD5291EB7C000F0F218 /* _ANEErrors.h */,
+				31B41BD6291EB7C000F0F218 /* _ANEModel.h */,
+				31B41BD7291EB7C000F0F218 /* _ANEHashEncoding.h */,
+				31B41BD8291EB7C000F0F218 /* NSCopying.h */,
+				31B41BD9291EB7C000F0F218 /* AppleNeuralEngine-Structs.h */,
+			);
+			path = AppleNeuralEngine;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +220,7 @@
 			files = (
 				31B41BB7291EB77900F0F218 /* Preview Assets.xcassets in Resources */,
 				31B41BB4291EB77900F0F218 /* Assets.xcassets in Resources */,
+				31B41BE3291EB7C000F0F218 /* model_tmp.hwx in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,7 +231,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				31B41BB2291EB77800F0F218 /* ContentView.swift in Sources */,
+				31B41BE4291EB7C000F0F218 /* IOGPU.c in Sources */,
+				31B41BE9291EB7C000F0F218 /* exploit.m in Sources */,
+				31B41BB2291EB77800F0F218 /* ExploitView.swift in Sources */,
+				31B41BE8291EB7C000F0F218 /* IOSurface.c in Sources */,
+				31B41BE5291EB7C000F0F218 /* ANEDirectIn.c in Sources */,
+				31B41BE7291EB7C000F0F218 /* utils.c in Sources */,
+				31B41BBE291EB7A300F0F218 /* mymodel.mlmodel in Sources */,
 				31B41BB0291EB77800F0F218 /* haxxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +383,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Alfie.haxx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "haxx/haxx-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -312,6 +413,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.Alfie.haxx;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "haxx/haxx-Bridging-Header.h";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
