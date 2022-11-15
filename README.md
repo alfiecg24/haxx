@@ -9,6 +9,8 @@ If you are debugging a crash/panic, then comment out `openConsolePipe()` in `Exp
 
 Original exploit can be found [here](https://github.com/0x36/weightBufs).
 
+If you're having issues compiling with error messages about unknown symbols, make sure that you've added IOKit.framework to the project in the project settings.
+
 ## To-do
 * Improve exploit reliability on T8020
 * Automatically assign cpuSubtype
